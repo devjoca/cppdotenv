@@ -74,3 +74,4 @@ Temporary Items
 *.out
 *.app
 
+.env

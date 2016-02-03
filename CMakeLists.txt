@@ -4,6 +4,6 @@ project(cppdotenv)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 set(SOURCE_FILES
-    main.cpp)
+    main.cpp include/Dotenv.h src/Dotenv.cpp include/Parser.h src/Parser.cpp include/helpers.h src/helpers.cpp)
 
 add_executable(cppdotenv ${SOURCE_FILES})

@@ -1,8 +1,15 @@
 #include <iostream>
+#include "include/Dotenv.h"
 
-using namespace std;
 
 int main() {
-    cout << "Hello, World!" << endl;
+
+    Dotenv* dotenv;
+
+    dotenv = new Dotenv("/Users/User/Developer/Joca/cppdotenv");
+    dotenv->load();
+    dotenv->getEnv("GOOGLE_URL");
+
     return 0;
 }
+
